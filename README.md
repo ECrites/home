@@ -1,1 +1,1 @@
-<a href="home.html">home page</a>
+<a href="index.html">home page</a>
