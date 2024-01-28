@@ -14,7 +14,7 @@ do {
 
     evenOdd(numInt, lengthInt);
 }
-while (numInt != 00);
+while (numInt != 00 && lengthInt >= 4);
 
 function addOne (input) {
     const add = input + 1;
