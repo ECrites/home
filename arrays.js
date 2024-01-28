@@ -18,7 +18,7 @@ while (numInt != 00);
 
 function addOne (input) {
     const add = input + 1;
-    console.log(input);
+    console.log(add);
 };
 
 //Checks for odd number for array length when going through 
