@@ -4,9 +4,9 @@ let lengthInt = 0;
 
 do {
 
-    numInt = parseInt(prompt("Give me at least 4 numbers. Type two zeros 00 when done", 00));
+    numInt = parseInt(prompt("Give me at least 4 numbers. Type zero 0 when done", 0));
 
-    if (numInt != 00) {
+    if (numInt != 0) {
         numArray[numArray.length] = numInt;
         lengthInt++;
     }
@@ -14,7 +14,7 @@ do {
 
     evenOdd(numInt, lengthInt);
 }
-while (numInt != 00);
+while (numInt != 0);
 
 function addOne (input) {
     const add = input + 1;
