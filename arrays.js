@@ -1,10 +1,10 @@
 const numArray = [];
 let numInt = 0;
-let lengthInt = 0;
+var lengthInt = 0;
 
 do {
 
-    numInt = parseInt(prompt("Give me at least 4 numbers. Type zero 0 when done", 0));
+    numInt = parseInt(prompt("Give me 4 numbers. Type zero 0 when done", 0));
 
     if (numInt != 0) {
         numArray[numArray.length] = numInt;
@@ -12,20 +12,24 @@ do {
     }
 
 
-    evenOdd(numInt, lengthInt);
 }
 while (numInt != 0);
+
+for (let x in numArray) {
+    evenOdd(addOne(numArray[x]), lengthInt);
+    lengthInt++;
+}
 
 function addOne (input) {
     const add = input + 1;
     console.log(add);
+    return add;
 };
 
-//Checks for odd number for array length when going through 
-//If even, send number to addOne function
-function evenOdd (numInt, lengthInt) {
-    if (numArray.length % 2 == 00) {
-        addOne(numInt)
+
+function evenOdd (num, length) {
+    if (num % 2 == 00) {
+        console.log(num + " In Array segment " + length);
     }
     else {
         console.log("Number is odd");
