@@ -1,6 +1,6 @@
 import{HP} from './lib_objects.js'
 
-const playerHp = new HP(15);
+const playerHp = new HP(20);
 playerHp.getHp();
 document.querySelector('button').addEventListener('click', drinkPotion);
 function drinkPotion() {

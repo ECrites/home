@@ -24,7 +24,7 @@ class HP{
 		container.appendChild(paragraph);
 	}
 	takeHp(){
-		this.hpLeft -= 3;
+		this.hpLeft -= 5;
 		if (this.hpLeft <= 0) {
 			var output = "You have fainted! Lets revive you back to 10 hp.";
 			const paragraph = document.createElement("p");
