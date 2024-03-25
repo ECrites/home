@@ -31,4 +31,4 @@ class hp{
 	}
 }
 
-export(hp);
+export {hp};
