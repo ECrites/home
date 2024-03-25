@@ -1,13 +1,13 @@
-import{hp} from './lib_objects.js'
-const playerHp = new hp(10);
-hp.getHp();
+import{HP} from './lib_objects.js'
+const playerHp = new HP(10);
+HP.getHp();
 function drinkPotion(){
 	if (Math.floor(Math.random() * 1) == 0){
-		hp.takeHp();
-		hp.getHp();
+		HP.takeHp();
+		HP.getHp();
 	}
 	else{
-		hp.giveHp();
-		hp.getHp();
+		HP.giveHp();
+		HP.getHp();
 	}
 }

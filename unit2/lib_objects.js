@@ -12,7 +12,7 @@ class Object {
 
 export{Object};
 
-class hp{
+class HP{
 	constructor(amount){
 		this.hpLeft = amount;
 	}
@@ -31,4 +31,4 @@ class hp{
 	}
 }
 
-export {hp};
+export {HP};
