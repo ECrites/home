@@ -11,3 +11,24 @@ class Object {
 }
 
 export{Object};
+
+class hp{
+	constructor(amount){
+		this.hpLeft = amount;
+	}
+	getHp(){
+		return this.hpLeft
+	}
+	takeHp(){
+		this.hpLeft -= 3;
+		if(this.hpLeft) <= 0{
+			document.getElementById("unittwo").innerHTML = "You have fainted! Lets revive you back to 10 hp.";
+			this.hpLeft = 10;
+		}
+	}
+	giveHp(){
+		this.hpLeft += 3;
+	}
+}
+
+export(hp);
