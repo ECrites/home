@@ -4,12 +4,12 @@ const playerHp = new HP(15);
 playerHp.getHp();
 document.querySelector('button').addEventListener('click', drinkPotion);
 function drinkPotion() {
-
-	if (Math.floor(Math.random() * 3) == 0) {
+	var rng = Math.floor(Math.random() * 2);
+	if (rng == 0) {
 		playerHp.takeHp();
 		playerHp.getHp();
 	}
-	else {
+	 if (rng == 1){
 		playerHp.giveHp();
 		playerHp.getHp();
 	}
