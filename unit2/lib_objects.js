@@ -18,11 +18,21 @@ class HP{
 	}
 	getHp(){
 		document.getElementById("container").innerHTML.append = this.hpLeft;
+		const paragraph = document.createElement("p");
+		const node = document.createTextNode(this.hpLeft);
+		paragraph.appendChild(node);
+		const container = document.getElementById("container");
+		container.appendChild(paragraph);
 	}
 	takeHp(){
 		this.hpLeft -= 3;
 		if (this.hpLeft <= 0) {
-			document.getElementById("container").innerHTML.append = "You have fainted! Lets revive you back to 10 hp.";
+			var output = "You have fainted! Lets revive you back to 10 hp.";
+			const paragraph = document.createElement("p");
+			const node = document.createTextNode(output);
+			paragraph.appendChild(node);
+			const container = document.getElementById("container");
+			container.appendChild(paragraph);
 			this.hpLeft = 10;
 		}
 	}
