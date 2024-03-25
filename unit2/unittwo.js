@@ -5,7 +5,7 @@ playerHp.getHp();
 document.querySelector('button').addEventListener('click', drinkPotion);
 function drinkPotion() {
 
-	if (Math.floor(Math.random() * 1) == 0) {
+	if (Math.floor(Math.random() * 3) == 0) {
 		playerHp.takeHp();
 		playerHp.getHp();
 	}
