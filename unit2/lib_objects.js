@@ -18,7 +18,7 @@ class HP{
 	}
 	getHp(){
 		const paragraph = document.createElement("p");
-		const node = document.createTextNode(this.hpLeft);
+		const node = document.createTextNode("HP: " + this.hpLeft);
 		paragraph.appendChild(node);
 		const container = document.getElementById("container");
 		container.appendChild(paragraph);
