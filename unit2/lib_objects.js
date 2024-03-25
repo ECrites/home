@@ -17,7 +17,6 @@ class HP{
 		this.hpLeft = amount;
 	}
 	getHp(){
-		document.getElementById("container").innerHTML.append = this.hpLeft;
 		const paragraph = document.createElement("p");
 		const node = document.createTextNode(this.hpLeft);
 		paragraph.appendChild(node);
