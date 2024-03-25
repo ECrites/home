@@ -17,11 +17,11 @@ class HP{
 		this.hpLeft = amount;
 	}
 	getHp(){
-		return this.hpLeft
+		document.getElementById("unittwo").innerHTML = this.hpLeft
 	}
 	takeHp(){
 		this.hpLeft -= 3;
-		if(this.hpLeft) <= 0{
+		if(this.hpLeft <= 0){
 			document.getElementById("unittwo").innerHTML = "You have fainted! Lets revive you back to 10 hp.";
 			this.hpLeft = 10;
 		}
